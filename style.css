@@ -1,0 +1,32 @@
+body {
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
+
+div {
+    background-color: aqua;
+    font-size: medium;
+
+}
+#box2 {
+    margin: 20px;
+    padding: 50px;
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: justify;
+    float: left;
+    }
+
+    #box1 {
+        margin: 20px;
+        padding: 10px;
+        border: 5px solid black;
+        width: 100px;
+        height: 100px;
+        text-align: justify;
+        float: left;
+        }
