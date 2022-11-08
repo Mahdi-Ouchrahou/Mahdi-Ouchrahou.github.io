@@ -1,81 +1,59 @@
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 
-main {
-  padding-left: 16px;
-}
-
-footer {
-    border-top: 1px solid #57b1dc;
-    text-align: center;
-    padding-top: 1em;
-}
-
-footer img {
-    width: 40px;
-    height: 40px;
-    margin-left: .5em;
-    margin-right: .5em;
-    
-}
-
-
-/* Create a top navigation bar with a black background color  */
 .topnav {
-    background-color: #333;
-    overflow: relative ;
-    width: 100%;  /* i'm assuming full width */
-    
-  }
-
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    
-  }
-  .topnav-right {
-    float: right;
-    
-  }
-
-  .topnav-centered a {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Create a right-aligned (split) link inside the navigation bar */
-  .topnav a.split {
-    float: right;
-    background-color: #04AA6D;
-    color: white;
-    height: 80px;
-  }
-
-  .topnav #logo {
-    display: inline-block;
-    vertical-align: top;
-    width: 50px;
-    height: 80px;
-    margin-right: 20px;
-    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
 }
- 
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+
+.topnav-right {
+  float: right;
+  
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
