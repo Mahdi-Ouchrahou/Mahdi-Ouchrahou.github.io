@@ -2,6 +2,10 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+main {
   padding-left: 16px;
 }
 
@@ -44,7 +48,7 @@ footer img {
     
   }
 
-  .topnav-centered {
+  .topnav-centered a {
     float: none;
     position: absolute;
     top: 50%;
