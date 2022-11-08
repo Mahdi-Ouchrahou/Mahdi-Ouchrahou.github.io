@@ -1,25 +1,3 @@
-body {
-    background-color: whitesmoke;
-    font-size: medium;
-    
-
-}
-
-h1 {
-    text-align: center;
-    font-family: serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    border-bottom: 1px solid #57b1dc;
-    margin-top: 30px;
-}
-
-h2 {
-    color: #d1633c;
-    font-size: 1em;
-}
-
-
 
 footer {
     border-top: 1px solid #57b1dc;
@@ -33,27 +11,6 @@ footer img {
     margin-left: .5em;
     margin-right: .5em;
 }
-
-#box2 {
-    margin: 20px;
-    padding: 50px;
-    border: 5px solid black;
-    width: 100px;
-    height: 100px;
-    text-align: justify;
-    float: left;
-}
-
-#box1 {
-    margin: 20px;
-    padding: 10px;
-    border: 5px solid black;
-    width: 100px;
-    height: 100px;
-    text-align: justify;
-    float: left;
-}
-
 
 
 /* Create a top navigation bar with a black background color  */
