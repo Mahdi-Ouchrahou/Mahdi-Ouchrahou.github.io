@@ -18,6 +18,8 @@ footer img {
 .topnav {
     background-color: #333;
     overflow: hidden;
+    width: 100%;  /* i'm assuming full width */
+    height: 80px;
   }
 
   
@@ -29,9 +31,11 @@ footer img {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    height: 80px;
   }
   .topnav-right {
     float: right;
+    height: 80px;
   }
 
   .topnav-centered {
@@ -53,5 +57,15 @@ footer img {
     float: right;
     background-color: #04AA6D;
     color: white;
+    height: 80px;
   }
+
+  #logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 80px;
+    margin-right: 20px;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+}
  
