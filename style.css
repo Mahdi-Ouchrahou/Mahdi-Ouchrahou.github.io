@@ -34,7 +34,7 @@ footer img {
     float: right;
   }
 
-  .topnav-centered h2 {
+  .topnav-centered {
     float: none;
     position: absolute;
     top: 50%;
