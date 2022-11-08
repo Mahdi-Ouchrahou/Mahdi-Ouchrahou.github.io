@@ -20,11 +20,6 @@ footer img {
     overflow: hidden;
   }
 
-  #logo {
-    float: left;
-    padding: 14px 16px;
-    padding-left: 0%;
-  }
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -39,7 +34,7 @@ footer img {
     float: right;
   }
 
-  .topnav-centered h3 {
+  .topnav-centered h2 {
     float: none;
     position: absolute;
     top: 50%;
