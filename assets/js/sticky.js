@@ -1,5 +1,5 @@
 // When the user scrolls the page, execute myFunction
-window.onload = ( window.onscroll = function() {myFunction()});
+ window.onscroll = function() {myFunction()};
 
 // Get the navbar
 var navbar = document.getElementsById("topnav");
