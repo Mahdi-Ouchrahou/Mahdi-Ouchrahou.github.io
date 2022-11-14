@@ -39,8 +39,8 @@ body {
 }
 
 #topnav-centered a:hover { 
-	background-color: none;
-  color:none;
+	background-color: unset;
+  color:unset;
 }
 
 #topnav a.active {
@@ -66,7 +66,7 @@ body {
 }
 
 /* Responsive navigation menu (for mobile devices) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #topnav a, #topnav-right {
     float: none;
     display: block;
