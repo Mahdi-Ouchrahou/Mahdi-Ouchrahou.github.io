@@ -18,6 +18,13 @@ body {
   font-size: 17px;
   
 }
+.logo-image{
+  width: 14px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  
+}
 
 .topnav a:hover {
   background-color: #ddd;
