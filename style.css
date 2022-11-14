@@ -48,7 +48,7 @@ body {
   color: white;
 }
 
-#topnav-centered a {
+.topnav-centered a {
   float: none;
   position: absolute;
   top: 50%;
@@ -60,19 +60,19 @@ body {
 
 
 
-#topnav-right {
+.topnav-right {
   float: right;
   
 }
 
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 600px) {
-  #topnav a, #topnav-right {
+  #topnav a, .topnav-right {
     float: none;
     display: block;
   }
   
-  #topnav-centered a {
+  .topnav-centered a {
     position: relative;
     top: 0;
     left: 0;
