@@ -1,35 +1,9 @@
-* {box-sizing: border-box;}
-html{
+html {
   margin: 0;
   padding: 0;
 }
 
-.bg-img {
-  /* The image used */
-  background-image: url("assets/img/bckground.jpg");
 
-  min-height: 700;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  /* Needed to position the navbar */
-  position: relative;
-}
-
-.container-nav{
-  position: absolute;
-  margin: 20px;
-  width: auto;
-}
-
-.container-body{
-  position: absolute;
-  margin: 20px;
-  width: auto;
-}
 
 
 
@@ -49,17 +23,17 @@ body {
 }
 
 #topnav {
-  
+
   overflow: hidden;
-  background-color:rgb(60, 5, 86);
+  background-color: rgb(60, 5, 86);
 }
 
-#logo-image{
+#logo-image {
   width: 14px;
   height: 20px;
   border-radius: 50%;
   overflow: hidden;
-  
+
 }
 
 #topnav a {
@@ -75,13 +49,13 @@ body {
 
 
 #topnav a:hover {
-  background-color:rgb(215, 166, 241);
+  background-color: rgb(215, 166, 241);
   color: unset;
 }
 
-#topnav-centered a:hover { 
-	background-color: unset;
-  color:#c399ea;
+#topnav-centered a:hover {
+  background-color: unset;
+  color: #c399ea;
 }
 
 #topnav a.active {
@@ -90,13 +64,13 @@ body {
 }
 
 #topnav-centered a {
-  display:block;
+  display: block;
   position: fixed;
   top: 0%;
   left: 45%;
   right: 45%;
   transform: translate(0%, 0%);
-  
+
 }
 
 
@@ -109,11 +83,13 @@ body {
 
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 800px) {
-  #topnav a, #topnav-right {
+
+  #topnav a,
+  #topnav-right {
     float: none;
     display: block;
   }
-  
+
   #topnav-centered a {
     position: relative;
     top: 0;
@@ -130,25 +106,31 @@ body {
 }
 
 
-.sticky + .body_sec {
+.sticky+.body_sec {
   padding-top: 60px;
 }
 
 
-.footerWrap {
-  width:100%;
-  position:absolute;
+.container {
+  width: 100%;
+  position: absolute;
   bottom: 0px;
 }
+
 .footer {
-  width:950px;
-  margin:auto;
+  width: 950px;
+  margin: auto;
 }
+
 .footerContent {
-  float:none;
-  width:100%;
-  background-color:rgb(215, 166, 241);
+  float: none;
+  width: 100%;
+  background-color: rgb(215, 166, 241);
   padding: 9px;
 }
-.footer p {position:auto; width:100%; text-align:center; }
 
+.footer p {
+  position: auto;
+  width: 100%;
+  text-align: center;
+}
