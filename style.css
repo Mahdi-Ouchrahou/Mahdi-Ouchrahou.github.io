@@ -40,7 +40,7 @@ body {
 
 #topnav-centered a:hover { 
 	background-color: unset;
-  color:unset;
+  color:#c399ea;
 }
 
 #topnav a.active {
