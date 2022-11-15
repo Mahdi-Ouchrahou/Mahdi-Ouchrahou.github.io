@@ -173,8 +173,13 @@ div#custom-div {
 
 h4 { font-size: 45px;}
 
-.headers h1, h4:hover,
-.headers h1, h4:focus {
+.headers h1:hover,
+.headers h1:focus {
+  background-color: #fff;
+  color: #333;
+}
+.headers h4:hover,
+.headers h4:focus {
   background-color: #fff;
   color: #333;
 }
