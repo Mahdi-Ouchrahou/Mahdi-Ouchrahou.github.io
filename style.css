@@ -89,7 +89,4 @@ body {
   width: 100%;
 }
 
-.sticky + .body_sec {
-  padding-top: 60px;
-}
 
