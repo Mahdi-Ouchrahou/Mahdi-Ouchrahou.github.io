@@ -137,12 +137,17 @@ div#custom-div {
   position: fixed;
   top: 14px 10px;
   height: auto!important;
-  background-color: #04AA6D;
   width: 100%
 }
 .box {
-  float: none;
+  float:left;
   width: auto;
   min-height: 25%;
   
+}
+
+.box {
+  border: 2px solid rgb(124, 7, 226);
+  border-radius: 12px;
+  padding: 5px;
 }
