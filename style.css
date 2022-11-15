@@ -23,6 +23,7 @@ body {
 
 #topnav a {
   float: left;
+  display: block;
   color: #c399ea;
   text-align: center;
   padding: 14px 16px;
@@ -49,7 +50,7 @@ body {
 
 #topnav-centered a {
   float: none;
-  position: absolute;
+  position: flex;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
