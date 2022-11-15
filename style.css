@@ -130,3 +130,19 @@ body {
   width: 100%;
   text-align: center;
 }
+
+
+
+div#custom-div {
+  position: fixed;
+  top: 14px 10px;
+  height: auto!important;
+  background-color: #04AA6D;
+  width: 100%
+}
+.box {
+  float: none;
+  width: auto;
+  min-height: 25%;
+  
+}
