@@ -134,7 +134,7 @@ body {
 
 
 div#custom-div {
-  position: fixed;
+  position: absolute;
   top: 14px 10px;
   height: auto !important;
   width: 100%
