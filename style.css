@@ -14,9 +14,7 @@ body {
 
 }
 
-.Content {
-  padding: 16px;
-}
+
 
 #topnav {
   
@@ -103,7 +101,7 @@ body {
 
 
 .sticky+.body_sec {
-  padding-top: 60px;
+  padding-top: 108px;
 }
 
 
@@ -137,14 +135,14 @@ div#custom-div {
   position: absolute;
   top: 14px 10px;
   height: auto !important;
-  width: 100%
+  width: 100%;
+  margin-left: 0%;
 }
 
 .box {
   float: left;
   width: 100%;
   min-height: 25%;
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
