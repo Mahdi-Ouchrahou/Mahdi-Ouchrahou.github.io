@@ -49,7 +49,7 @@ body {
 }
 
 #topnav-centered a {
-  float: none;
+  float:unset;
   display: block;
   justify-content: center;
   align-items: center;
