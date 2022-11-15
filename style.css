@@ -114,7 +114,7 @@ body {
   margin:auto;
 }
 .footerContent {
-  float:left;
+  float:none;
   width:100%;
   background-color:#c399ea;
   padding:14px 0;
