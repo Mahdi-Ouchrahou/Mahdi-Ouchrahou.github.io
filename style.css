@@ -26,7 +26,7 @@ body {
   display: block;
   color: #c399ea;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 17px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -44,12 +44,12 @@ body {
 }
 
 #topnav a.active {
-  background-color: #04AA6D;
+  background-color: rgb(215, 166, 241);
   color: white;
 }
 
 #topnav-centered a {
-  float: center;
+  float: none;
   display: block;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,20 @@ body {
   display: block;
 }
 
-
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 800px) {
+  #topnav a, #topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  #topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
 
 .sticky {
   position: fixed;
