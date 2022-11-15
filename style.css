@@ -105,18 +105,18 @@ body {
 
 
 .footerWrap {
-  width:100%;
+  width:50%;
   position:fixed;
   bottom: 0px;
 }
 .footer {
-  width:100px;
+  width:800px;
   margin:auto;
 }
 .footerContent {
   float:left;
   width:100%;
   background-color:#c399ea;
-  padding:20px 0;
+  padding:14px 0;
 }
-.footer p {float:left; width:100%; text-align:center; }
+.footer p {float:left; width:50%; text-align:center; }
