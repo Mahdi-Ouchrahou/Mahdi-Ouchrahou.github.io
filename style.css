@@ -19,11 +19,18 @@ html{
   position: relative;
 }
 
-.container{
+.container-nav{
   position: absolute;
   margin: 20px;
   width: auto;
 }
+
+.container-body{
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
 
 
 body {
