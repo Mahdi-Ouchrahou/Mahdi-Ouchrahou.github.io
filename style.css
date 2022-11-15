@@ -136,14 +136,27 @@ body {
 div#custom-div {
   position: fixed;
   top: 14px 10px;
-  height: auto!important;
+  height: auto !important;
   width: 100%
 }
+
 .box {
-  float:left;
-  width: auto;
+  float: left;
+  width: 100%;
   min-height: 25%;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+
+
+
+  border: 2px solid rgb(124, 7, 226);
+  border-radius: 12px;
+  padding: 5px;
+  margin: auto;
+  background-color: #333;
 }
 
 .box {
