@@ -64,9 +64,25 @@ body {
 
 
 
+
 #topnav-right {
   float: right;
   display: block;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 800px) {
+  #topnav a, #topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  #topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
 }
 
 
@@ -80,3 +96,21 @@ body {
 .sticky + .body_sec {
   padding-top: 60px;
 }
+
+
+.footerWrap {
+  width:100%;
+  position:fixed;
+  bottom: 0px;
+}
+.footer {
+  width:400px;
+  margin:auto;
+}
+.footerContent {
+  float:left;
+  width:100%;
+  background-color:#c399ea;
+  padding:20px 0;
+}
+.footer p {float:left; width:100%; text-align:center; }
