@@ -110,14 +110,14 @@ body {
   bottom: 0px;
 }
 .footer {
-  width:800px;
+  width:950px;
   margin:auto;
 }
 .footerContent {
   float:none;
   width:100%;
   background-color:rgb(215, 166, 241);
-  padding:12px 0;
+  padding: 9px;
 }
 .footer p {position:auto; width:100%; text-align:center; }
 
