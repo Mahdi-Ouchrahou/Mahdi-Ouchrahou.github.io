@@ -51,6 +51,8 @@ body {
 #topnav-centered a {
   float: center;
   display: block;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
