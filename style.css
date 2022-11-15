@@ -1,7 +1,37 @@
+* {box-sizing: border-box;}
 html{
   margin: 0;
   padding: 0;
 }
+
+.bg-img {
+  /* The image used */
+  background-image: url("assets/img/bckground.jpg");
+
+  min-height: 700;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.container-nav {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.container-body {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -106,7 +136,7 @@ body {
 
 .footerWrap {
   width:100%;
-  position:fixed;
+  position:absolute;
   bottom: 0px;
 }
 .footer {
