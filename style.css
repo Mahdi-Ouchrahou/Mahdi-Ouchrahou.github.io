@@ -8,7 +8,7 @@ body {
 }
 
 #topnav {
-  position: relative;
+  
   overflow: hidden;
   background-color:rgb(60, 5, 86);
 }
@@ -33,7 +33,7 @@ body {
 
 
 #topnav a:hover {
-  background-color:aliceblue;
+  background-color:rgb(215, 166, 241);
   color: unset;
 }
 
