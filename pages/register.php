@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
 
 
     <title>MyJUB</title>
@@ -54,6 +54,58 @@
   background: #f1f1f1;
             
         }
+        .message {
+        position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  z-index: 9999;
+  text-align: center;
+    }
+    .error {
+        position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  z-index: 9999;
+  text-align: center;
+    }
+    .message {
+        position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  z-index: 9999;
+  text-align: center;
+    }
+    .button {
+  display: inline-block;
+  background-color: rgb(45,84,94, 0.9);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgb(45,84,94, 0.9);
+}
+span a {
+  color: rgb(45,84,94, 0.9); /* set the color to blue */
+  text-decoration: none; /* add an underline */
+  font-weight: bold; /* make the text bold */
+  margin-left: 5px; /* add a margin to separate the link from the previous text */
+}
     </style>
 </head>
 
@@ -174,7 +226,7 @@ if (isset($_POST['submit'])) {
 
     if (!empty($errors)) {
         // Display errors
-        echo '<div class="box">';
+        echo '<div class="error">';
     foreach ($errors as $error) {
         echo "<p>$error</p>";
     }
@@ -182,12 +234,17 @@ if (isset($_POST['submit'])) {
     } else {
         // Insert data into database
         $sql = "INSERT INTO users (fname, lname, email, password, college, block) VALUES ('$fname', '$lname', '$email', '$hashed_password', '$college', '$block')";
-
+        
         if (mysqli_query($conn, $sql)) {
-            echo "<p>Data stored in a database successfully.</p>";
+            $message = "Data stored in a database successfully. You are registered! Try to Log In!";
+        header("Location: login.php?message=$message");
+        exit();
         } else {
             echo "ERROR: Could not execute $sql. " . mysqli_error($conn);
         }
+        exit();
+
+        
     }
 }
 
@@ -213,20 +270,27 @@ mysqli_close($conn);
                         
                         <label for="college">Choose your college:</label> <br>
 <select name="college" id="college">
-  <option value="A">Krupp College</option>
-  <option value="B">C3 College </option>
-  <option value="C">Mercator College </option>
-  <option value="D">Nord College </option>
-</select>
+  <option value="Krupp">Krupp College</option>
+  <option value="C3">C3 College </option>
+  <option value="Mercator">Mercator College </option>
+  <option value="Nord">Nord College </option>
+</select> <br><br>
     
                         <label for="block"> Enter your block </label> <br>
-                        <input type="text" id="block" name="block"> <br>
+                        <select name="block" id="block">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        </select> <br> <br>
+                        
     
                         
         
                         
-                        <input type="submit" value="Register" name="submit">
-                        <input type="reset">
+                        <input type="submit" value="Register" name="submit" class="button">
+                        <input type="reset" class="button"> <br>
+                        <p>Already a user, try to <span><a href="./login.php">Log in</a></span> .</p>
         </div>        
         </form>
         </div>
@@ -320,6 +384,18 @@ mysqli_close($conn);
 
             }
         }
+    </script>
+    <script>
+    const message = document.querySelector('.message');
+    const error = document.querySelector('.error');
+
+// Hide the message after 3 seconds (3000 milliseconds)
+setTimeout(() => {
+  message.style.display = 'none';
+}, 3000);
+setTimeout(() => {
+  error.style.display = 'none';
+}, 3000);
     </script>
     
 </body>

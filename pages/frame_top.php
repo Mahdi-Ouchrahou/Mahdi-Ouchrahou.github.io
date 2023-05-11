@@ -4,7 +4,7 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="">Log Out</a>
+        <a href="./logout.php">Logout</a>
 
         </div>
     </div>
@@ -12,7 +12,7 @@
         <nav id="nav" class="nav">
 
             <div id="logo_brand" class="brand">
-                <a href="./index.html"><img style="width: 130px; height: 144px;" src="../assets/img/logo4.png" scale="0"
+                <a href="./home.php"><img style="width: 130px; height: 144px;" src="../assets/img/logo4.png" scale="0"
                         alt="logo"></a>
             </div>
 

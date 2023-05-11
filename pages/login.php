@@ -1,3 +1,9 @@
+<?php
+if (isset($_GET['message'])) {
+    $message = $_GET['message'];
+    echo '<div class="message">' . $message . '</div>';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
     <style>
         .view1 {
         
@@ -47,6 +53,28 @@ display: inline-block;
 border: none;
 background: #f1f1f1;
         
+    }
+    .error {
+        position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  z-index: 9999;
+  text-align: center;
+    }
+    .message {
+        position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  z-index: 9999;
+  text-align: center;
     }
     </style>
 
@@ -109,6 +137,10 @@ background: #f1f1f1;
     </header>
     <main>
         <div class="view1">
+            <h1>Log in</h1>
+            
+                Enter your email and password in order to log in. 
+        
 
         
 
@@ -262,6 +294,19 @@ background: #f1f1f1;
   }
 }
     </script>
+    <script>
+    const message = document.querySelector('.message');
+    const error = document.querySelector('.error');
+
+// Hide the message after 3 seconds (3000 milliseconds)
+setTimeout(() => {
+  message.style.display = 'none';
+}, 3000);
+setTimeout(() => {
+  error.style.display = 'none';
+}, 3000);
+    </script>
+    
 </body>
 
 

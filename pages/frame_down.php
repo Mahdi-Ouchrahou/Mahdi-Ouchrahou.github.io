@@ -86,6 +86,76 @@ document.getElementById("nav").style.padding = "30px 0px";
 }
 }
 </script>
+<script>
+    const message = document.querySelector('.message');
+    const error = document.querySelector('.error');
+
+// Hide the message after 3 seconds (3000 milliseconds)
+setTimeout(() => {
+  message.style.display = 'none';
+}, 3000);
+setTimeout(() => {
+  error.style.display = 'none';
+}, 3000);
+    </script>
+    <script>
+
+const apiKey = "c7469299c8cdabe5249816cebb33b80e";
+
+const main = document.getElementById('main');
+const form = document.getElementById('search-bar');
+const search = document.getElementById('search');
+  
+const url = (city)=> `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+
+
+async function getWeatherByLocation(city){
+     
+         const resp = await fetch(url(city), {
+             origin: "cros" });
+         const respData = await resp.json();
+     
+           addWeatherToPage(respData);
+          
+     }
+
+      function addWeatherToPage(data){
+          const temp = Ktoc(data.main.temp);
+
+          const weather = document.createElement('div')
+          weather.classList.add('weather');
+
+          weather.innerHTML = `
+          <h2><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /> ${temp}°C <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /></h2>
+          <small>${data.weather[0].main}</small>
+          
+          `;
+
+
+        //   cleanup 
+          main.innerHTML= "";
+           main.appendChild(weather);
+      };
+
+
+     function Ktoc(K){
+         return Math.floor(K - 273.15);
+     }
+
+
+
+     form.addEventListener('submit',(e) =>{
+        e.preventDefault();
+
+        const city = search.value;
+
+        if(city){
+            getWeatherByLocation(city)
+        }
+
+     });
+
+</script>
 </body>
 
 
